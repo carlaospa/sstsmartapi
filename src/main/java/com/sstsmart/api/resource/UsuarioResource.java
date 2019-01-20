@@ -19,7 +19,6 @@ public class UsuarioResource {
 	private UsuarioRepository usuarioRepository;
 	
 	@GetMapping
-	@CrossOrigin
 	public List<Usuario> listar(){
 		return usuarioRepository.findAll();
 	}
